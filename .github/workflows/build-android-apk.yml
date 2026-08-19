@@ -26,7 +26,7 @@ jobs:
         run: |
           curl --fail --location --output source.zip \
             https://grow-heal-wellness-tracker.nonaemiawjaa.chatgpt.site/grow-heal-android-source.zip
-          echo "cb97801dff4e3fdac27c50d0e6f2d81d17d56630683213ec1683a567a49c614a  source.zip" | sha256sum --check
+          echo "b6a96b8e848ffd02f19444d0e016628ab8df305b58a3bcafc7405c65764bba6f  source.zip" | sha256sum --check
           unzip -q source.zip
 
       - name: Install Android SDK
