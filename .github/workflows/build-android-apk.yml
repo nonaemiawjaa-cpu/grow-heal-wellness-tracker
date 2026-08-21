@@ -24,10 +24,8 @@ jobs:
 
       - name: Download verified source
         run: |
-          curl --fail --location --output source.zip \
-            https://grow-heal-wellness-tracker.nonaemiawjaa.chatgpt.site/grow-heal-android-source.zip
           curl --fail --location https://grow-heal-wellness-tracker.nonaemiawjaa.chatgpt.site/grow-heal-android-source.sha256 | sha256sum --check
-
+          unzip -q source.zip
       - name: Install Android SDK
         run: sdkmanager "platforms;android-36" "build-tools;36.0.0"
 
